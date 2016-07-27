@@ -46,7 +46,7 @@ task test(type: NpmTask) {
     args = ['test']
 }
 
-task build(dependsOn: test, type: NpmTask) {
+task build(type: NpmTask) {
     args = ['run', 'build']
 }
 
